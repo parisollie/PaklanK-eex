@@ -1,0 +1,25 @@
+
+git clone https://github.com/parisollie/ComputoMovil.git
+git pull
+
+git add -A  
+git status
+git commit   -m "Subiendo"
+git push 
+
+
+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
+
+chmod 777 blink8.py
+chmod 777 ./webserver.py
+python3 webserver.py
+
+
+---------------------
+pr2
+python3 webserver.py
+
+./temp_srvr.py
+
+chmod 777 revs.py
+./revs.py
