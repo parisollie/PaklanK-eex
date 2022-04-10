@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:paklan/models/productos_model.dart';
 import 'package:paklan/pages/otra_pagina.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:paklan/pages/pedido_lista.dart';
 void main() {
   runApp(const MyApp());
 }
