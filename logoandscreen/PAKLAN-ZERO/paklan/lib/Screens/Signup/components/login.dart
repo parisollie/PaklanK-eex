@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:paklan/navegacion/inicio.dart';
 import 'package:paklan/navegacion/inscrito.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:paklan/Screens/Login/login_screen.dart';
