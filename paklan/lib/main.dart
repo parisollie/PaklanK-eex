@@ -3,6 +3,11 @@ import 'package:paklan/models/productos_model.dart';
 import 'package:paklan/pages/otra_pagina.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:paklan/pages/pedido_lista.dart';
+import 'package:paklan/qr/qr.dart';
+import 'package:paklan/camimg/camImg.dart';
+import 'package:paklan/tarjeta/tarjeta.dart';
+import 'package:paklan/novedades/BurritoListPage.dart';
+import 'package:paklan/condiciones/condiciones.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -52,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Deliver Me"),
+        title: Text("Bienvenido"),
         //title: Text(widget.title),
         actions: <Widget>[
           Padding(
@@ -110,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: new BoxDecoration(
                       image: new DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage('Assets/images/food1.png'),
+                        image: AssetImage('Assets/burritos/iconori.png'),
                       ),
                     ),
                   ),
@@ -119,22 +124,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 new Divider(),
                 new ListTile(
                   title: new Text(
-                    'Home',
+                    'CAM-IMG',
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: new Icon(
-                    Icons.home,
+                    Icons.camera,
                     size: 30.0,
                     color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => OtraPagina(),
+                    builder: (BuildContext context) => CamImg(),
                   )),
                 ),
                 new Divider(),
                 new ListTile(
                   title: new Text(
-                    'Cupones',
+                    'Novedades',
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: new Icon(
@@ -143,37 +148,37 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => OtraPagina(),
+                    builder: (BuildContext context) => BurritosListPage(),
                   )),
                 ),
                 new Divider(),
                 new ListTile(
                   title: new Text(
-                    'Tiendas',
+                    'Terminos y Condiciones',
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: new Icon(
-                    Icons.place,
+                    Icons.confirmation_num_sharp,
                     size: 30.0,
                     color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => OtraPagina(),
+                    builder: (BuildContext context) => Condiciones(),
                   )),
                 ),
                 new Divider(),
                 new ListTile(
                   title: new Text(
-                    'Produtos',
+                    'Tarjeta',
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: new Icon(
-                    Icons.fastfood,
+                    Icons.credit_card,
                     size: 30.0,
                     color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => OtraPagina(),
+                    builder: (BuildContext context) => Tarjeta(),
                   )),
                 ),
                 
@@ -189,7 +194,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     size: 30.0,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => OtraPagina(),
+                    builder: (BuildContext context) => QrsPag(),
                   )),
                 ),
                 new Divider(),
@@ -288,43 +293,43 @@ class _MyHomePageState extends State<MyHomePage> {
     void _productosDb() {
     var list = <ProductosModel>[
       ProductosModel(
-        name: 'Burguer King',
-        image: 'food1.png',
-        price: 12,
-      ),
-      ProductosModel(
-        name: 'Pizza Italiana',
-        image: 'food2.png',
-        price: 17,
-      ),
-      ProductosModel(
-        name: 'Carne..',
-        image: 'food3.png',
-        price: 25,
-      ),
-      ProductosModel(
-        name: 'Burger',
-        image: 'food4.png',
-        price: 19,
-      ),
-      ProductosModel(
-        name: 'Asado',
-        image: 'food5.png',
-        price: 11,
-      ),
-      ProductosModel(
-        name: 'Food Tailandesa',
-        image: 'food6.png',
-        price: 14,
-      ),
-      ProductosModel(
-        name: 'Pizza Big',
-        image: 'food7.png',
+        name: 'AMIBA 2',
+        image: 'tar1.png',
         price: 15,
       ),
       ProductosModel(
-        name: 'Empanas',
-        image: 'food8.png',
+        name: 'EMP240T100C5',
+        image: 'tar2.png',
+        price: 17,
+      ),
+      ProductosModel(
+        name: 'CYCLONE IV',
+        image: 'tar3.png',
+        price: 12,
+      ),
+      ProductosModel(
+        name: 'DE10-LITE',
+        image: 'tar4.png',
+        price: 19,
+      ),
+      ProductosModel(
+        name: 'MAX 1000',
+        image: 'tar5.png',
+        price: 11,
+      ),
+      ProductosModel(
+        name: 'MAXII_EPM 240',
+        image: 'tar6.png',
+        price: 14,
+      ),
+      ProductosModel(
+        name: 'CYCLONE II',
+        image: 'tar7.png',
+        price: 15,
+      ),
+      ProductosModel(
+        name: 'Raspberry Pi',
+        image: 'tar8.png',
         price: 18,
       ),
     ];

@@ -45,7 +45,7 @@ class _CartState extends State<Cart> {
       ),
     );
   }
-
+  //Funcion para el listado de prouctos para que sepa el valor total de los productos
   String valorTotal(List<ProductosModel> listaProductos) {
     double total = 0.0;
 
@@ -112,16 +112,20 @@ class _CartState extends State<Cart> {
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8.0, vertical: 2.0),
+                        
                         child: Column(
                           children: <Widget>[
                             Row(
                               children: <Widget>[
-                                Container(
-                                  width: 150,
-                                  height: 150,
-                                  child: new Image.asset(
-                                      "assets/images/$imagen",
-                                      fit: BoxFit.contain),
+                                
+                                Expanded( child: Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: new Image.asset(
+                                      //Simbolo de pesos para hacer el llamado product model
+                                        "Assets/images/$imagen",
+                                        fit: BoxFit.contain),
+                                  ),
                                 ),
                                 Column(
                                   children: <Widget>[

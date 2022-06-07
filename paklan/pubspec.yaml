@@ -29,6 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # CAMARAIMAGEN
+  #image_picker: ^0.8.5
+  image_cropper: ^1.5.1
+  dio: ^4.0.6
+  #TARJETA
+  mask_text_input_formatter: ^2.0.0
+  #SLIDER
+  google_fonts: ^3.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,12 +46,16 @@ dependencies:
   fancy_dialog: ^1.0.4
    #flutter_svg: ^1.0.3
   flutter_svg: ^0.20.0-nullsafety.3
-  cloud_firestore: ^3.1.11
+  cloud_firestore: ^3.1.17
   http: ^0.13.4
   image_picker: ^0.8.5
-  firebase_storage: ^10.2.11
+  firebase_storage: ^10.2.17
   cached_network_image: ^3.2.0
   url_launcher: ^6.0.20
+  # Para qr
+  
+  barcode_widget: ^2.0.2
+  flutter_qr_bar_scanner: ^3.0.2
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +83,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
   - Assets/images/
+  - Assets/burritos/
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

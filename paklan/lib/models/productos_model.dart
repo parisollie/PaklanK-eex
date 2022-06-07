@@ -11,6 +11,6 @@ class ProductosModel {
    //  this.name="", this.image="", required this.price, this.quantity = 1});
    ProductosModel({
     //  this.name="", this.image="", required this.price, this.quantity = 1});
-    required this.name, required this.image,required  this.price, this.quantity = 1}); 
+    required this.name, required this.image,required this.price, this.quantity = 1}); 
 }
 
