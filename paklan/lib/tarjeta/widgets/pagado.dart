@@ -8,6 +8,7 @@ class Pagado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF21BFBD),
       body: Center(
         child: ShaderMask(
           blendMode:BlendMode.srcIn,

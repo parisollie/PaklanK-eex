@@ -175,81 +175,92 @@ class _CamImgState extends State<CamImg> {
   @override
   Widget build(BuildContext context) {
     final shape = StadiumBorder();
+    
     return Scaffold(
+      backgroundColor: Color(0xFF21BFBD),
       appBar: AppBar(
         title: Text('Selecciona una imagen'),
       ),
-      body:ListView(
-        children: [
-          Padding(
-            padding: EdgeInsets.all(20),
-            child: Column(
-              children: [
-                Container(
-                  margin: const EdgeInsets.all(15),
-                  width: MediaQuery.of(context).size.width - 30,
-                  decoration: ShapeDecoration(
-                    shape: shape,
-                    gradient:LinearGradient(
-                      colors:[
-                      Colors.greenAccent, 
-                      Colors.indigo,
-                      ],
+      body:Container(
+        decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(1920.0),
+                          topRight: Radius.circular(10.0),
+                        ),
+                        color: Colors.white),
+        child: ListView(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.all(15),
+                    width: MediaQuery.of(context).size.width - 30,
+                    decoration: ShapeDecoration(
+                      shape: shape,
+                      gradient:LinearGradient(
+                        colors:[
+                        Colors.greenAccent, 
+                        Colors.indigo,
+                        ],
+                      ),
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                                tapTargetSize:MaterialTapTargetSize.shrinkWrap,
+                                primary:Colors.transparent,
+                                shadowColor:Colors.transparent,
+                                shape: new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                        ), 
+                      onPressed:() {
+                        opciones (context);
+                      },
+                      child: Text('Selecciona una imagen'),
                     ),
                   ),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                              tapTargetSize:MaterialTapTargetSize.shrinkWrap,
-                              primary:Colors.transparent,
-                              shadowColor:Colors.transparent,
-                              shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(30.0),
-                              ),
-                      ), 
-                    onPressed:() {
-                      opciones (context);
-                    },
-                    child: Text('Selecciona una imagen'),
-                  ),
-                ),
-                SizedBox(height: 10,),
-                SizedBox(height: 10,),
+                  SizedBox(height: 10,),
+                  SizedBox(height: 10,),
 
-                 Container(
-                  margin: const EdgeInsets.all(15),
-                  width: MediaQuery.of(context).size.width - 30,
-                  decoration: ShapeDecoration(
-                    shape: shape,
-                    gradient:LinearGradient(
-                      colors:[
-                      Colors.greenAccent, 
-                      Colors.indigo,
-                      ],
+                   Container(
+                    margin: const EdgeInsets.all(15),
+                    width: MediaQuery.of(context).size.width - 30,
+                    decoration: ShapeDecoration(
+                      shape: shape,
+                      gradient:LinearGradient(
+                        colors:[
+                        Colors.greenAccent, 
+                        Colors.indigo,
+                        ],
+                      ),
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                                tapTargetSize:MaterialTapTargetSize.shrinkWrap,
+                                primary:Colors.transparent,
+                                shadowColor:Colors.transparent,
+                                shape: new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                        ), 
+                      onPressed:() {
+                        subir_imagen ();
+                      },
+                      child: Text('Subir imagen'),
                     ),
                   ),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                              tapTargetSize:MaterialTapTargetSize.shrinkWrap,
-                              primary:Colors.transparent,
-                              shadowColor:Colors.transparent,
-                              shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(30.0),
-                              ),
-                      ), 
-                    onPressed:() {
-                      subir_imagen ();
-                    },
-                    child: Text('Subir imagen'),
-                  ),
-                ),
-                SizedBox(height: 30,),
-                //Center()
-                imagen == null ? Center() :Image.file(imagen!) 
-              ],
-            ),
-          )
-        ],
+                  SizedBox(height: 30,),
+                  //Center()
+                  imagen == null ? Center() :Image.file(imagen!) 
+                ],
+              ),
+            )
+          ],
+        ),
       ),
+      
     );
   }
 }

@@ -7,7 +7,7 @@ import 'package:paklan/qr/qr.dart';
 import 'package:paklan/camimg/camImg.dart';
 import 'package:paklan/tarjeta/tarjeta.dart';
 import 'package:paklan/novedades/BurritoListPage.dart';
-import 'package:paklan/condiciones/condiciones.dart';
+import 'package:paklan/condiciones/pages/conditions.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -56,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF21BFBD),
       appBar: AppBar(
         title: Text("Bienvenido"),
         //title: Text(widget.title),
@@ -163,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                    builder: (BuildContext context) => Condiciones(),
+                    builder: (BuildContext context) => Conditions(),
                   )),
                 ),
                 new Divider(),

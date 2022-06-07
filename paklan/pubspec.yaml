@@ -84,6 +84,12 @@ flutter:
   assets:
   - Assets/images/
   - Assets/burritos/
+  - Assets/letras/plate1.png
+  - Assets/letras/plate2.png
+  - Assets/letras/plate3.png
+  - Assets/letras/plate4.png
+  - Assets/letras/plate5.png
+  - Assets/letras/plate6.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -97,6 +103,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: Assets/letras/Montserrat-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
