@@ -48,7 +48,7 @@ dependencies:
   flutter_svg: ^0.20.0-nullsafety.3
   cloud_firestore: ^3.1.17
   http: ^0.13.4
-  image_picker: ^0.8.5+3
+  image_picker: ^0.8.5
   firebase_storage: ^10.2.17
   cached_network_image: ^3.2.0
   url_launcher: ^6.0.20
@@ -82,14 +82,12 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - Assets/images/
-  - Assets/burritos/
-  - Assets/letras/plate1.png
-  - Assets/letras/plate2.png
-  - Assets/letras/plate3.png
-  - Assets/letras/plate4.png
-  - Assets/letras/plate5.png
-  - Assets/letras/plate6.png
+   - assets/plate1.png
+   - assets/plate2.png
+   - assets/plate3.png
+   - assets/plate4.png
+   - assets/plate5.png
+   - assets/plate6.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -106,12 +104,7 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        - asset: Assets/letras/Montserrat-Regular.ttf
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+        - asset: assets/Montserrat-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

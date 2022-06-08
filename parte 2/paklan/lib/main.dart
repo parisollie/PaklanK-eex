@@ -4,13 +4,15 @@ import 'package:paklan/pages/otra_pagina.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //import 'package:paklan/pages/pedido_lista.dart';
 import 'package:paklan/pages/pedList.dart';
-//import 'package:paklan/qr/qr.dart';
+import 'package:paklan/qr/qr.dart';
 //import 'package:paklan/tarjeta/tarjeta.dart';
 import 'package:paklan/novedades/BurritoListPage.dart';
 import 'package:paklan/condiciones/pages/conditions.dart';
 import 'package:paklan/camimg/camera.dart';
 import 'package:paklan/tarjeta/tar.dart';
-import 'package:paklan/qr/qr.dart';
+
+import 'package:paklan/principal/home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,11 +23,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        
-        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(color: Color(0xFF21BFBD), centerTitle: true),
+        primaryColor: Color.fromARGB(255, 29, 214, 84),
       ),
       home: const MyHomePage(title: 'App de compras'),
     );
@@ -58,8 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
-      backgroundColor: Color(0xFF21BFBD),
+      backgroundColor: Color.fromARGB(255, 45, 248, 109),
       appBar: AppBar(
         title: Text("Bienvenido"),
         //title: Text(widget.title),
@@ -102,6 +106,8 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
+      
+      //////////////////////////////////////////////////////////////////////
       drawer: Container(
         width: 170.0,
         child: Drawer(
@@ -189,24 +195,29 @@ class _MyHomePageState extends State<MyHomePage> {
                 new Divider(),
                 new ListTile(
                   title: new Text(
-                    'QR Code',
+                    'QR',
                     style: TextStyle(color: Colors.white),
                   ),
-                  trailing: new FaIcon(
-                    FontAwesomeIcons.qrcode,
-                    color: Colors.white,
+                  trailing: new Icon(
+                    Icons.qr_code,
                     size: 30.0,
+                    color: Colors.white,
                   ),
                   onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                     builder: (BuildContext context) => QrsPag(),
                   )),
                 ),
                 new Divider(),
+
               ],
             ),
           ),
         ),
       ),
+
+
+      //////////////////////////////////////////////////////////////////////
+      
       body: _cuadroProductos(),
     );
   }
@@ -245,7 +256,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         SizedBox(
-                          height: 25,
+                          height: 15,
                         ),
                         Text(
                           item.price.toString(),
@@ -265,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: (!_listaCarro.contains(item))
                                   ? Icon(
                                       Icons.shopping_cart,
-                                      color: Color.fromARGB(255, 248, 196, 116),
+                                      color: Colors.orange,
                                       size: 38,
                                     )
                                   : Icon(
@@ -293,6 +304,7 @@ class _MyHomePageState extends State<MyHomePage> {
       },
     );
   }
+//////////////////////////////////////////////////////////////////////
 
     void _productosDb() {
     var list = <ProductosModel>[
@@ -342,4 +354,8 @@ class _MyHomePageState extends State<MyHomePage> {
       _productosModel = list;
     });
   }
+
+  
+
+  //////////////////////////////////////////////////////////////////////
 }
