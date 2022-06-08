@@ -4,10 +4,11 @@ import 'package:paklan/pages/otra_pagina.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:paklan/pages/pedido_lista.dart';
 import 'package:paklan/qr/qr.dart';
-import 'package:paklan/camimg/camImg.dart';
-import 'package:paklan/tarjeta/tarjeta.dart';
+//import 'package:paklan/tarjeta/tarjeta.dart';
 import 'package:paklan/novedades/BurritoListPage.dart';
 import 'package:paklan/condiciones/pages/conditions.dart';
+import 'package:paklan/camimg/camera.dart';
+import 'package:paklan/tarjeta/tar.dart';
 void main() {
   runApp(const MyApp());
 }
