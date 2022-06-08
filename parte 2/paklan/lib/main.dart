@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:paklan/models/productos_model.dart';
 import 'package:paklan/pages/otra_pagina.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:paklan/pages/pedido_lista.dart';
-import 'package:paklan/qr/qr.dart';
+//import 'package:paklan/pages/pedido_lista.dart';
+import 'package:paklan/pages/pedList.dart';
+//import 'package:paklan/qr/qr.dart';
 //import 'package:paklan/tarjeta/tarjeta.dart';
 import 'package:paklan/novedades/BurritoListPage.dart';
 import 'package:paklan/condiciones/pages/conditions.dart';
 import 'package:paklan/camimg/camera.dart';
 import 'package:paklan/tarjeta/tar.dart';
+import 'package:paklan/qr/qr.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -263,12 +265,12 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: (!_listaCarro.contains(item))
                                   ? Icon(
                                       Icons.shopping_cart,
-                                      color: Colors.green,
+                                      color: Color.fromARGB(255, 248, 196, 116),
                                       size: 38,
                                     )
                                   : Icon(
                                       Icons.shopping_cart,
-                                      color: Colors.red,
+                                      color: Color.fromARGB(255, 42, 208, 214),
                                       size: 38,
                                     ),
                               onTap: () {
@@ -297,42 +299,42 @@ class _MyHomePageState extends State<MyHomePage> {
       ProductosModel(
         name: 'AMIBA 2',
         image: 'tar1.png',
-        price: 15,
+        price: 1500,
       ),
       ProductosModel(
         name: 'EMP240T100C5',
         image: 'tar2.png',
-        price: 17,
+        price: 1750,
       ),
       ProductosModel(
         name: 'CYCLONE IV',
         image: 'tar3.png',
-        price: 12,
+        price: 1278,
       ),
       ProductosModel(
         name: 'DE10-LITE',
         image: 'tar4.png',
-        price: 19,
+        price: 1907,
       ),
       ProductosModel(
         name: 'MAX 1000',
         image: 'tar5.png',
-        price: 11,
+        price: 1178,
       ),
       ProductosModel(
         name: 'MAXII_EPM 240',
         image: 'tar6.png',
-        price: 14,
+        price: 1400,
       ),
       ProductosModel(
         name: 'CYCLONE II',
         image: 'tar7.png',
-        price: 15,
+        price: 1500,
       ),
       ProductosModel(
         name: 'Raspberry Pi',
         image: 'tar8.png',
-        price: 18,
+        price: 1887,
       ),
     ];
 

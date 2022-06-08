@@ -29,20 +29,21 @@ class _FirstState extends State<First> {
                     controller: title,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                      hintText: ' Code ',
+                      hintText: ' Codigo ',
                     ),
                   ),
                 ),
               ),
+              
               MaterialButton(
-                color: Colors.indigo,
+                color: Color(0xFF21BFBD),
                 onPressed: () {
                   setState(() {
                     code = title.text;
                   });
                 },
                 child: Text(
-                  "Create",
+                  "Crear QR",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,

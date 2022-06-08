@@ -18,6 +18,7 @@ class Tarjeta extends StatelessWidget {
         backgroundColor: Color(0xFF21BFBD),
       
       body: ListView(
+
         children: <Widget>[
           Padding(
             padding: EdgeInsets.only(top: 15.0, left: 10.0),
@@ -25,7 +26,7 @@ class Tarjeta extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.arrow_back_ios),
+                  icon: Icon(Icons.arrow_back),
                   color: Colors.white,
                   onPressed: () {},
                 ),
@@ -49,6 +50,7 @@ class Tarjeta extends StatelessWidget {
               ],
             ),
           ),
+
           SizedBox(height: 25.0),
           Padding(
             padding: EdgeInsets.only(left: 40.0),
@@ -95,7 +97,9 @@ class Tarjeta extends StatelessWidget {
             ),
           )
         ],
+
       ),
+
       ),
     );
   }

@@ -24,7 +24,7 @@ class _ConditionsState extends State<Conditions> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.arrow_back_ios),
+                  icon: Icon(Icons.arrow_back),
                   color: Colors.white,
                   onPressed: () {},
                 ),

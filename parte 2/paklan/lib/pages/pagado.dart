@@ -20,12 +20,13 @@ class Pagado extends StatelessWidget {
               Colors.indigo,
             ],
           ).createShader(rect),
+          
           child: TextButton(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Tarjeta registrada',
+                  'COMPRA EXITOSA',
                   style:TextStyle(
                     fontSize:38,
                     fontWeight:FontWeight.bold,

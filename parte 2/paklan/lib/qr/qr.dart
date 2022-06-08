@@ -1,39 +1,21 @@
+
 import 'first.dart';
 import 'second.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class QrsPag extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  State<QrsPag> createState() => _QrsPagState();
 }
 
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Home(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
+class _QrsPagState extends State<QrsPag> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.indigo[900],
+          backgroundColor: Color(0xFF21BFBD),
           bottom: const TabBar(
             tabs: [
               Tab(
