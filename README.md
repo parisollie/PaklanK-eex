@@ -5,7 +5,9 @@
 
 * Date:    26/05/2022
 
-* It is an application so that the student of the Faculty of Engineering of the UNAM, can buy in an easy way electronic material or anything else
+* I am currently developing a prototype that will contain 3 things, a database to sell products, a web application and a web page to promote the application for the UNAM engineering faculty.
+* The app can do the following things at the moment
+* 
 * Can take photos
 * Can recognize QR codes
 * It has an interactive men
