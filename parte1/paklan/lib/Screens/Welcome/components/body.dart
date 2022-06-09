@@ -20,13 +20,13 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO PAKLAN K'EEX",
+              "BIENVENIDO(A) A PAKLAN K'EEX",
               style: TextStyle(fontWeight: FontWeight.bold,fontSize:20),
               
             ),
             SizedBox(height: size.height * 0.05),
             SvgPicture.asset(
-              "assets/icons/home.svg",
+              "Assets/icons/home.svg",
               height: size.height * 0.45,
             ),
             SizedBox(height: size.height * 0.05),

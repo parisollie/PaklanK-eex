@@ -24,7 +24,7 @@ class _LogBodState extends State<LogBod> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text('SingUP'),
+        title: Text('Sign up'),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -42,13 +42,13 @@ class _LogBodState extends State<LogBod> {
                 children:<Widget>[
                   //nombre(),
                   //SizedBox(height: 20),
-                  Text(
-                    "SIGNUP",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                 // Text(
+                  //  "Sign up",
+                   // style: TextStyle(fontWeight: FontWeight.bold),
+                  //),
                   SizedBox(height: size.height * 0.03),
                   SvgPicture.asset(
-                    "assets/icons/signup.svg",
+                    "Assets/icons/si.svg",
                     height: size.height * 0.35,
                   ),
                   SizedBox(height: size.height * 0.03),
@@ -94,7 +94,7 @@ class _LogBodState extends State<LogBod> {
                     ),          
                   ),
                   
-                  SizedBox(height: 20),
+                  SizedBox(height: 18),
                   Material(
                       color:Colors.transparent,
                       shape:shape,
@@ -130,13 +130,13 @@ class _LogBodState extends State<LogBod> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         TextButton(
                           child: Text(
-                            'Already have an Account?, Sign In',
+                            'Ya tienes una cuenta?, Sign in',
                             style: TextStyle(
                               color: Colors.teal,
                               fontWeight: FontWeight.bold,
@@ -160,15 +160,15 @@ class _LogBodState extends State<LogBod> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SocalIcon(
-                          iconSrc: "assets/icons/facebook.svg",
+                          iconSrc: "Assets/icons/facebook.svg",
                           press: () {},
                         ),
                         SocalIcon(
-                          iconSrc: "assets/icons/twitter.svg",
+                          iconSrc: "Assets/icons/twitter.svg",
                           press: () {},
                         ),
                         SocalIcon(
-                          iconSrc: "assets/icons/google-plus.svg",
+                          iconSrc: "Assets/icons/google-plus.svg",
                           press: () {},
                         ),
                 ],

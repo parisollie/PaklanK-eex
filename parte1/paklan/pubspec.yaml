@@ -29,15 +29,37 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # CAMARAIMAGEN
+  #image_picker: ^0.8.5
+  image_cropper: ^1.5.1
+  dio: ^4.0.6
+  #TARJETA
+  mask_text_input_formatter: ^2.0.0
+  #SLIDER
+  google_fonts: ^3.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_svg: ^1.0.3
+  
   firebase_core: ^1.11.0
   #firebase_auth: ^0.18.2
   firebase_auth: ^3.3.5
+  font_awesome_flutter: ^10.1.0
+  fancy_dialog: ^1.0.4
+  flutter_svg: ^1.1.0
+  
+  cloud_firestore: ^3.1.17
+  http: ^0.13.4
+  image_picker: ^0.8.5+3
+  firebase_storage: ^10.2.17
+  cached_network_image: ^3.2.0
+  url_launcher: ^6.0.20
+  # Para qr
+  
+  barcode_widget: ^2.0.2
+  flutter_qr_bar_scanner: ^3.0.2
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +85,19 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
-    - assets/icons/
+    - Assets/images/
+    - Assets/icons/
+    - images/dog.jpg
+    - images/combo.png
+    - images/combo2.png
+    - Assets/burritos/
+    - Assets/perfil/
+    - Assets/letras/plate1.png
+    - Assets/letras/plate2.png
+    - Assets/letras/plate3.png
+    - Assets/letras/plate4.png
+    - Assets/letras/plate5.png
+    - Assets/letras/plate6.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -79,6 +112,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: Assets/letras/Montserrat-Regular.ttf
+
   # fonts:
   #   - family: Schyler
   #     fonts:

@@ -21,7 +21,7 @@ class Background extends StatelessWidget {
             top: -76,
             left: -40,
             child: Image.asset(
-              "assets/images/explot.png",
+              "Assets/images/explot.png",
               width: size.width * 0.75,
             ),
           ),
@@ -29,7 +29,7 @@ class Background extends StatelessWidget {
             bottom: -40,
             right: -60,
             child: Image.asset(
-              "assets/images/algodon.png",
+              "Assets/images/algodon.png",
               width: size.width * 0.6,
             ),
           ),

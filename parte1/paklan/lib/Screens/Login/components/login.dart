@@ -42,14 +42,14 @@ class _LogBodState extends State<LogBod> {
               mainAxisAlignment: MainAxisAlignment.center,
                 children:<Widget>[
                   //nombre(),
-                  //SizedBox(height: 20),
-                  Text(
-                    "LOGIN",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                 // SizedBox(height: 20),
+                 // Text(
+                  //  "Login",
+                  //  style: TextStyle(fontWeight: FontWeight.bold),
+                 // ),
                   SizedBox(height: size.height * 0.03),
                   SvgPicture.asset(
-                    "assets/icons/login.svg",
+                    "Assets/icons/log.svg",
                     height: size.height * 0.35,
                   ),
                   SizedBox(height: size.height * 0.03),
@@ -138,15 +138,15 @@ class _LogBodState extends State<LogBod> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SocalIcon(
-                          iconSrc: "assets/icons/facebook.svg",
+                          iconSrc: "Assets/icons/facebook.svg",
                           press: () {},
                         ),
                         SocalIcon(
-                          iconSrc: "assets/icons/twitter.svg",
+                          iconSrc: "Assets/icons/twitter.svg",
                           press: () {},
                         ),
                         SocalIcon(
-                          iconSrc: "assets/icons/google-plus.svg",
+                          iconSrc: "Assets/icons/google-plus.svg",
                           press: () {},
                         ),
                 ],
@@ -156,7 +156,7 @@ class _LogBodState extends State<LogBod> {
                       children: <Widget>[
                         TextButton(
                           child: Text(
-                            'Don’t have an Account?, Sign Up ',
+                            'Ya tienes una cuenta?, Sign up ',
                             style: TextStyle(
                               color: Color.fromARGB(255, 15, 16, 16),
                               fontWeight: FontWeight.bold,
