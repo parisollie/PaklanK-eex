@@ -12,7 +12,7 @@ import 'package:paklan/camimg/camera.dart';
 import 'package:paklan/tarjeta/tar.dart';
 
 import 'package:paklan/principal/home.dart';
-import 'package:paklan/drawer/NabBar.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -64,9 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
     
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 45, 248, 109),
-      drawer: NavBar(),
       appBar: AppBar(
-        title: Text("Bienvenido Ingeniero(a)"),
+        title: Text("Bienvenido"),
         //title: Text(widget.title),
         actions: <Widget>[
           Padding(
@@ -108,7 +107,122 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       
-      
+      //////////////////////////////////////////////////////////////////////
+      drawer: Container(
+        width: 170.0,
+        child: Drawer(
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.5,
+            color: Colors.black,
+            child: new ListView(
+              padding: EdgeInsets.only(top: 50.0),
+              children: <Widget>[
+                Container(
+                  height: 120,
+                  child: new UserAccountsDrawerHeader(
+                    accountName: new Text(''),
+                    accountEmail: new Text(''),
+                    decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('Assets/burritos/iconori.png'),
+                      ),
+                    ),
+                  ),
+                ),
+                
+                new Divider(),
+                
+                new ListTile(
+                  title: new Text(
+                    'CAM-IMG',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.camera,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => CamImg(),
+                  )),
+                ),
+
+                new Divider(),
+
+                new ListTile(
+                  title: new Text(
+                    'Novedades',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.card_giftcard,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => BurritosListPage(),
+                  )),
+                ),
+
+                new Divider(),
+
+                new ListTile(
+                  title: new Text(
+                    'Terminos y Condiciones',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.confirmation_num_sharp,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => Conditions(),
+                  )),
+                ),
+
+                new Divider(),
+
+                new ListTile(
+                  title: new Text(
+                    'Tarjeta',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.credit_card,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => Tarjeta(),
+                  )),
+                ),
+                
+                new Divider(),
+
+                new ListTile(
+                  title: new Text(
+                    'QR',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: new Icon(
+                    Icons.qr_code,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => QrsPag(),
+                  )),
+                ),
+                
+                new Divider(),
+
+              ],
+            ),
+          ),
+        ),
+      ),
 
 
       //////////////////////////////////////////////////////////////////////
