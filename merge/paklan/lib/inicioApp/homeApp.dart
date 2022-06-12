@@ -1,18 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:paklan/models/productos_model.dart';
-import 'package:paklan/pages/otra_pagina.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-//import 'package:paklan/pages/pedido_lista.dart';
 import 'package:paklan/pages/pedList.dart';
-import 'package:paklan/qr/qr.dart';
-//import 'package:paklan/tarjeta/tarjeta.dart';
-import 'package:paklan/novedades/BurritoListPage.dart';
-import 'package:paklan/condiciones/pages/conditions.dart';
-import 'package:paklan/camimg/camera.dart';
-import 'package:paklan/tarjeta/tar.dart';
-
-import 'package:paklan/drawer/NabBar.dart';
-
+import 'package:paklan/inicioApp/drawer/NabBar.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -20,7 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -35,7 +24,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-
   final String title;
 
   @override
@@ -43,14 +31,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
- // List<ProductosModel> _productosModel = List<ProductosModel>();
+  // List<ProductosModel> _productosModel = List<ProductosModel>();
 
- List<ProductosModel> _productosModel = List<ProductosModel>.empty(growable: true);
+  List<ProductosModel> _productosModel =
+      List<ProductosModel>.empty(growable: true);
 
- List<ProductosModel> _listaCarro = List<ProductosModel>.empty(growable: true);
+  List<ProductosModel> _listaCarro = List<ProductosModel>.empty(growable: true);
 
- @override
+  @override
   void initState() {
     super.initState();
     _productosDb();
@@ -58,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 45, 248, 109),
       drawer: NavBar(),
@@ -104,12 +91,9 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      
-      
-
 
       //////////////////////////////////////////////////////////////////////
-      
+
       body: _cuadroProductos(),
     );
   }
@@ -198,7 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 //////////////////////////////////////////////////////////////////////
 
-    void _productosDb() {
+  void _productosDb() {
     var list = <ProductosModel>[
       ProductosModel(
         name: 'AMIBA 2',
@@ -246,8 +230,6 @@ class _MyHomePageState extends State<MyHomePage> {
       _productosModel = list;
     });
   }
-
-  
 
   //////////////////////////////////////////////////////////////////////
 }

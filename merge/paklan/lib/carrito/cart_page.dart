@@ -2,8 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:paklan/carrito/datos.dart';
-import 'package:paklan/pages/pagado.dart';
-
+import 'package:paklan/pagado/pagado.dart';
 
 class cart_page extends StatelessWidget {
   final List<carrito> lista;
@@ -28,10 +27,10 @@ class cart_page extends StatelessWidget {
         floatingActionButton: TextButton(
           onPressed: () {
             Navigator.push(
-            //Navigator nos pide el contexto
-            context,
-            //Y nos pide el widget a utilizar
-            MaterialPageRoute(builder: (context)=>Pagado()));
+                //Navigator nos pide el contexto
+                context,
+                //Y nos pide el widget a utilizar
+                MaterialPageRoute(builder: (context) => Pagado()));
           },
           child: Text('Comprar', style: TextStyle(fontSize: 20)),
         ),

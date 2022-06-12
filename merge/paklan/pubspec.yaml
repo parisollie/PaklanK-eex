@@ -31,7 +31,7 @@ dependencies:
     sdk: flutter
   # CAMARAIMAGEN
   #image_picker: ^0.8.5
-  image_cropper: ^1.5.1
+  image_cropper: ^2.0.3
   dio: ^4.0.6
   #TARJETA
   mask_text_input_formatter: ^2.0.0
@@ -73,7 +73,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

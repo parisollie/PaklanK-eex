@@ -7,10 +7,13 @@ class ProductosModel {
   late final int price;
   late final int quantity;
 
-   //ProductosModel({this.name, this.image, this.price, this.quantity = 1});
-   //  this.name="", this.image="", required this.price, this.quantity = 1});
-   ProductosModel({
-    //  this.name="", this.image="", required this.price, this.quantity = 1});
-    required this.name, required this.image,required this.price, this.quantity = 1}); 
+  //ProductosModel({this.name, this.image, this.price, this.quantity = 1});
+  //  this.name="", this.image="", required this.price, this.quantity = 1});
+  ProductosModel(
+      {
+      //  this.name="", this.image="", required this.price, this.quantity = 1});
+      required this.name,
+      required this.image,
+      required this.price,
+      this.quantity = 1});
 }
-

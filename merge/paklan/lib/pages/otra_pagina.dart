@@ -12,11 +12,11 @@ class _OtraPaginaState extends State<OtraPagina> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Otra Pagina',
-        style: TextStyle(fontSize: 15.0),
+        child: Text(
+          'Otra Pagina',
+          style: TextStyle(fontSize: 15.0),
         ),
       ),
-
     );
   }
 }

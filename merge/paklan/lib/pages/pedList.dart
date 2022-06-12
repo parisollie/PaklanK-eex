@@ -1,12 +1,9 @@
-import 'package:paklan/models/productos_model.dart';
-//import 'package:fancy_dialog/FancyAnimation.dart';
-//import 'package:fancy_dialog/FancyGif.dart';
-//import 'package:fancy_dialog/FancyTheme.dart';
-//import 'package:fancy_dialog/fancy_dialog.dart';
-import 'package:paklan/pages/pagado.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:paklan/models/productos_model.dart';
+import 'package:paklan/pagado/pagado.dart';
+
+
 
 
 class Cart extends StatefulWidget {
@@ -46,6 +43,7 @@ class _CartState extends State<Cart> {
       ),
     );
   }
+
   //Funcion para el listado de prouctos para que sepa el valor total de los productos
   String valorTotal(List<ProductosModel> listaProductos) {
     double total = 0.0;
@@ -60,10 +58,8 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     final shape = StadiumBorder();
     return Scaffold(
-              backgroundColor: Color(0xFF21BFBD),
-      
+      backgroundColor: Color(0xFF21BFBD),
       body: ListView(
-
         children: <Widget>[
           Padding(
             padding: EdgeInsets.only(top: 15.0, left: 10.0),
@@ -75,9 +71,9 @@ class _CartState extends State<Cart> {
                   color: Colors.white,
                   onPressed: () {
                     Navigator.of(context).pop();
-            setState(() {
-              _cart.length;
-            });
+                    setState(() {
+                      _cart.length;
+                    });
                   },
                 ),
                 Container(
@@ -100,7 +96,6 @@ class _CartState extends State<Cart> {
               ],
             ),
           ),
-
           SizedBox(height: 25.0),
           Padding(
             padding: EdgeInsets.only(left: 40.0),
@@ -121,7 +116,7 @@ class _CartState extends State<Cart> {
               ],
             ),
           ),
-               SizedBox(height: 10.0),
+          SizedBox(height: 10.0),
           Container(
             height: MediaQuery.of(context).size.height - 135.0,
             //ovaladoBLanco
@@ -129,189 +124,198 @@ class _CartState extends State<Cart> {
               color: Colors.white,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(175.0)),
             ),
-            
+
             child: ListView(
               primary: false,
               padding: EdgeInsets.only(left: 1.0, right: 10.0),
-              
               children: <Widget>[
-                SizedBox(height: 60,),
-                
+                SizedBox(
+                  height: 60,
+                ),
                 GestureDetector(
-          onVerticalDragUpdate: (details) {
-            if (_enabled && _firstScroll) {
-              _scrollController
-                  .jumpTo(_scrollController.position.pixels - details.delta.dy);
-            }
-          },
-          onVerticalDragEnd: (_) {
-            if (_enabled) _firstScroll = false;
-          },
-          child: SingleChildScrollView(
-              child: Column(
-            children: <Widget>[
-              ListView.builder(
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                itemCount: _cart.length,
-                itemBuilder: (context, index) {
-                  final String imagen = _cart[index].image;
-                  var item = _cart[index];
-                  //item.quantity = 0;
-                  return Column(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 13.0, vertical: 2.0),
-                        
+                    onVerticalDragUpdate: (details) {
+                      if (_enabled && _firstScroll) {
+                        _scrollController.jumpTo(
+                            _scrollController.position.pixels -
+                                details.delta.dy);
+                      }
+                    },
+                    onVerticalDragEnd: (_) {
+                      if (_enabled) _firstScroll = false;
+                    },
+                    child: SingleChildScrollView(
                         child: Column(
-                          children: <Widget>[
-                            Row(
+                      children: <Widget>[
+                        ListView.builder(
+                          scrollDirection: Axis.vertical,
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          itemCount: _cart.length,
+                          itemBuilder: (context, index) {
+                            final String imagen = _cart[index].image;
+                            var item = _cart[index];
+                            //item.quantity = 0;
+                            return Column(
                               children: <Widget>[
-                                
-                                Expanded( child: Container(
-                                    width: 100,
-                                    height: 100,
-                                    child: new Image.asset(
-                                      //Simbolo de pesos para hacer el llamado product model
-                                        "Assets/images/$imagen",
-                                        fit: BoxFit.contain),
-                                  ),
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Text(item.name,
-                                        style: new TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16.0,
-                                            color: Colors.black)),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: <Widget>[
-                                        Container(
-                                          width: 120,
-                                          height: 40,
-                                          decoration: BoxDecoration(
-                                              color: Colors.red[600],
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 6.0,
-                                                  color: Colors.blue,
-                                                  offset: Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                              borderRadius: BorderRadius.all(
-                                                Radius.circular(50.0),
-                                              )),
-                                          margin: EdgeInsets.only(top: 20.0),
-                                          padding: EdgeInsets.all(2.0),
-                                          child: new Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 13.0, vertical: 2.0),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Row(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Container(
+                                              width: 100,
+                                              height: 100,
+                                              child: new Image.asset(
+                                                  //Simbolo de pesos para hacer el llamado product model
+                                                  "Assets/images/$imagen",
+                                                  fit: BoxFit.contain),
+                                            ),
+                                          ),
+                                          Column(
                                             children: <Widget>[
-                                              SizedBox(
-                                                height: 8.0,
-                                              ),
-                                              IconButton(
-                                                icon: Icon(Icons.remove),
-                                                onPressed: () {
-                                                  _removeProduct(index);
-                                                  valorTotal(_cart);
-                                                  // print(_cart);
-                                                },
-                                                color: Colors.yellow,
-                                              ),
-                                              Text('${_cart[index].quantity}',
+                                              Text(item.name,
                                                   style: new TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                      fontSize: 22.0,
-                                                      color: Colors.white)),
-                                              IconButton(
-                                                icon: Icon(Icons.add),
-                                                onPressed: () {
-                                                  _addProduct(index);
-                                                  valorTotal(_cart);
-                                                },
-                                                color: Colors
-                                                    .yellow, // print(_cart);
-                                              ),
-                                              SizedBox(
-                                                height: 8.0,
+                                                      fontSize: 16.0,
+                                                      color: Colors.black)),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Container(
+                                                    width: 120,
+                                                    height: 40,
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.red[600],
+                                                        boxShadow: [
+                                                          BoxShadow(
+                                                            blurRadius: 6.0,
+                                                            color: Colors.blue,
+                                                            offset: Offset(
+                                                                0.0, 1.0),
+                                                          )
+                                                        ],
+                                                        borderRadius:
+                                                            BorderRadius.all(
+                                                          Radius.circular(50.0),
+                                                        )),
+                                                    margin: EdgeInsets.only(
+                                                        top: 20.0),
+                                                    padding:
+                                                        EdgeInsets.all(2.0),
+                                                    child: new Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: <Widget>[
+                                                        SizedBox(
+                                                          height: 8.0,
+                                                        ),
+                                                        IconButton(
+                                                          icon: Icon(
+                                                              Icons.remove),
+                                                          onPressed: () {
+                                                            _removeProduct(
+                                                                index);
+                                                            valorTotal(_cart);
+                                                            // print(_cart);
+                                                          },
+                                                          color: Colors.yellow,
+                                                        ),
+                                                        Text(
+                                                            '${_cart[index].quantity}',
+                                                            style: new TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                fontSize: 22.0,
+                                                                color: Colors
+                                                                    .white)),
+                                                        IconButton(
+                                                          icon: Icon(Icons.add),
+                                                          onPressed: () {
+                                                            _addProduct(index);
+                                                            valorTotal(_cart);
+                                                          },
+                                                          color: Colors
+                                                              .yellow, // print(_cart);
+                                                        ),
+                                                        SizedBox(
+                                                          height: 8.0,
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
-                                        )
-                                      ],
-                                    )
-                                  ],
+                                          SizedBox(
+                                            width: 38.0,
+                                          ),
+                                          Text(item.price.toString(),
+                                              style: new TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 24.0,
+                                                  color: Colors.black))
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                SizedBox(
-                                  width: 38.0,
-                                ),
-                                Text(item.price.toString(),
-                                    style: new TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 24.0,
-                                        color: Colors.black))
+                                Divider(
+                                  color: Colors.purple,
+                                )
                               ],
-                            ),
-                          ],
+                            );
+                          },
                         ),
-                      ),
-                      Divider(
-                        color: Colors.purple,
-                      )
-                    ],
-                  );
-                },
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              pagoTotal(_cart),
-              SizedBox(
-                width: 20.0,
-              ),
-              Container(
-                height: 100,
-                width: 200,
-                padding: EdgeInsets.only(top: 50),
-                
-                
-                child: Container(
-
-                  margin: const EdgeInsets.all(15),
-                width: MediaQuery.of(context).size.width - 30,
-                decoration: ShapeDecoration(
-                  shape: shape,
-                  gradient:LinearGradient(
-                    //begin:Alignment.topCenter,
-                    //end:Alignment.bottomCenter,
-                    colors:[
-                      Colors.greenAccent, 
-                      Colors.indigo,
-                    ],
-                  ),
-                ),
-                  child: ElevatedButton(
-                    //textColor: Colors.white,
-                    //color: Colors.green,
-                     style: ElevatedButton.styleFrom(
-                              tapTargetSize:MaterialTapTargetSize.shrinkWrap,
-                              primary:Colors.transparent,
-                              shadowColor:Colors.transparent,
-                              shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(30.0),
+                        SizedBox(
+                          width: 10.0,
+                        ),
+                        pagoTotal(_cart),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Container(
+                          height: 100,
+                          width: 200,
+                          padding: EdgeInsets.only(top: 50),
+                          child: Container(
+                            margin: const EdgeInsets.all(15),
+                            width: MediaQuery.of(context).size.width - 30,
+                            decoration: ShapeDecoration(
+                              shape: shape,
+                              gradient: LinearGradient(
+                                //begin:Alignment.topCenter,
+                                //end:Alignment.bottomCenter,
+                                colors: [
+                                  Colors.greenAccent,
+                                  Colors.indigo,
+                                ],
                               ),
-                          ), 
-                    
-                    onPressed: () => {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                           builder: (context) => Pagado()))  
-                       /*
+                            ),
+                            child: ElevatedButton(
+                              //textColor: Colors.white,
+                              //color: Colors.green,
+                              style: ElevatedButton.styleFrom(
+                                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                primary: Colors.transparent,
+                                shadowColor: Colors.transparent,
+                                shape: new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                              ),
+
+                              onPressed: () => {
+                                Navigator.of(context).pushReplacement(
+                                    MaterialPageRoute(
+                                        builder: (context) => Pagado()))
+                                /*
                       showDialog(
                           context: context,
                           builder: (BuildContext context) => FancyDialog(
@@ -324,35 +328,21 @@ class _CartState extends State<Cart> {
                                 okFun: () => {print("it's working :)")},
                               )
                       )*/
-                    },
-                    child: Text("PAGAR"),
-                    //shape: new RoundedRectangleBorder(
-                      //borderRadius: new BorderRadius.circular(30.0),
-                    //),
-                  
-                  ),
-                ),
-                
-              ),
-            ],
-          )
-          )
-          ),
-                
-               
-                
+                              },
+                              child: Text("PAGAR"),
+                              //shape: new RoundedRectangleBorder(
+                              //borderRadius: new BorderRadius.circular(30.0),
+                              //),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ))),
               ],
-
-
             ),
           )
         ],
-
       ),
-      
-        
-        
-
     );
   }
 

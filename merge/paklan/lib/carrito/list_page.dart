@@ -29,7 +29,6 @@ class _list_pageState extends State<list_page> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      
       child: Scaffold(
         floatingActionButton: Container(
           decoration: BoxDecoration(

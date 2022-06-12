@@ -1,12 +1,6 @@
-import 'package:paklan/models/productos_model.dart';
-//import 'package:fancy_dialog/FancyAnimation.dart';
-//import 'package:fancy_dialog/FancyGif.dart';
-//import 'package:fancy_dialog/FancyTheme.dart';
-//import 'package:fancy_dialog/fancy_dialog.dart';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:paklan/models/productos_model.dart';
 
 class Cart extends StatefulWidget {
   final List<ProductosModel> _cart;
@@ -45,6 +39,7 @@ class _CartState extends State<Cart> {
       ),
     );
   }
+
   //Funcion para el listado de prouctos para que sepa el valor total de los productos
   String valorTotal(List<ProductosModel> listaProductos) {
     double total = 0.0;
@@ -112,17 +107,16 @@ class _CartState extends State<Cart> {
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8.0, vertical: 2.0),
-                        
                         child: Column(
                           children: <Widget>[
                             Row(
                               children: <Widget>[
-                                
-                                Expanded( child: Container(
+                                Expanded(
+                                  child: Container(
                                     width: 100,
                                     height: 100,
                                     child: new Image.asset(
-                                      //Simbolo de pesos para hacer el llamado product model
+                                        //Simbolo de pesos para hacer el llamado product model
                                         "Assets/images/$imagen",
                                         fit: BoxFit.contain),
                                   ),
@@ -227,37 +221,34 @@ class _CartState extends State<Cart> {
                 height: 100,
                 width: 200,
                 padding: EdgeInsets.only(top: 50),
-                
-                
                 child: Container(
-
                   margin: const EdgeInsets.all(15),
-                width: MediaQuery.of(context).size.width - 30,
-                decoration: ShapeDecoration(
-                  shape: shape,
-                  gradient:LinearGradient(
-                    //begin:Alignment.topCenter,
-                    //end:Alignment.bottomCenter,
-                    colors:[
-                      Colors.greenAccent, 
-                      Colors.indigo,
-                    ],
+                  width: MediaQuery.of(context).size.width - 30,
+                  decoration: ShapeDecoration(
+                    shape: shape,
+                    gradient: LinearGradient(
+                      //begin:Alignment.topCenter,
+                      //end:Alignment.bottomCenter,
+                      colors: [
+                        Colors.greenAccent,
+                        Colors.indigo,
+                      ],
+                    ),
                   ),
-                ),
                   child: ElevatedButton(
                     //textColor: Colors.white,
                     //color: Colors.green,
-                     style: ElevatedButton.styleFrom(
-                              tapTargetSize:MaterialTapTargetSize.shrinkWrap,
-                              primary:Colors.transparent,
-                              shadowColor:Colors.transparent,
-                              shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(30.0),
-                              ),
-                          ), 
-                    
+                    style: ElevatedButton.styleFrom(
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      primary: Colors.transparent,
+                      shadowColor: Colors.transparent,
+                      shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(30.0),
+                      ),
+                    ),
+
                     onPressed: () => {
-                       /*
+                      /*
                       showDialog(
                           context: context,
                           builder: (BuildContext context) => FancyDialog(
@@ -273,12 +264,10 @@ class _CartState extends State<Cart> {
                     },
                     child: Text("PAGAR"),
                     //shape: new RoundedRectangleBorder(
-                      //borderRadius: new BorderRadius.circular(30.0),
+                    //borderRadius: new BorderRadius.circular(30.0),
                     //),
-                  
                   ),
                 ),
-                
               ),
             ],
           ))),

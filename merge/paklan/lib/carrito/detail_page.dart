@@ -12,7 +12,7 @@ class detail_page extends StatefulWidget {
   @override
   State<detail_page> createState() => _detail_pageState();
 
-  detail_page(this.indice,this.seleccion);
+  detail_page(this.indice, this.seleccion);
 }
 
 class _detail_pageState extends State<detail_page> {
@@ -28,20 +28,27 @@ class _detail_pageState extends State<detail_page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-          title: Text(contenido.asst[widget.seleccion].articulos[widget.indice].nombre)),
+          backgroundColor: Colors.teal,
+          title: Text(contenido
+              .asst[widget.seleccion].articulos[widget.indice].nombre)),
       body: Column(children: [
         Expanded(
           flex: 4,
           child: Center(
-            child: _myImage(widget.indice,
-                contenido.asst[widget.seleccion].articulos[widget.indice].imagen, 400, 400),
+            child: _myImage(
+                widget.indice,
+                contenido
+                    .asst[widget.seleccion].articulos[widget.indice].imagen,
+                400,
+                400),
           ),
         ),
         Expanded(
           flex: 2,
           child: Center(
-            child: Text(contenido.asst[widget.seleccion].articulos[widget.indice].descripcion,
+            child: Text(
+                contenido.asst[widget.seleccion].articulos[widget.indice]
+                    .descripcion,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic)),
           ),
@@ -52,8 +59,8 @@ class _detail_pageState extends State<detail_page> {
               itemBuilder: (context, _) =>
                   Icon(Icons.star_border, color: Colors.amber),
               onRatingUpdate: (rating) {},
-              initialRating:
-                  contenido.asst[widget.seleccion].articulos[widget.indice].calificacion,
+              initialRating: contenido
+                  .asst[widget.seleccion].articulos[widget.indice].calificacion,
               ignoreGestures: true,
             ),
           ),
@@ -92,9 +99,9 @@ class _detail_pageState extends State<detail_page> {
               ),
               TextButton(
                 onPressed: () {
-                    setState(() {
-                      counter++;
-                    });
+                  setState(() {
+                    counter++;
+                  });
                 },
                 child: Icon(
                   Icons.add_box_outlined,
@@ -109,22 +116,25 @@ class _detail_pageState extends State<detail_page> {
             child: TextButton(
               onPressed: () {
                 Navigator.pop(context, [
-                  contenido.asst[widget.seleccion].articulos[widget.indice].nombre,
-                  contenido.asst[widget.seleccion].articulos[widget.indice].precio,
-                  counter]);
+                  contenido
+                      .asst[widget.seleccion].articulos[widget.indice].nombre,
+                  contenido
+                      .asst[widget.seleccion].articulos[widget.indice].precio,
+                  counter
+                ]);
               },
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.shopping_cart_outlined,
-                      size: 28.0,
-                    ),
-                    Text(
-                      ' Añadir ',
-                    ),
-                  ],
-                ),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.shopping_cart_outlined,
+                    size: 28.0,
+                  ),
+                  Text(
+                    ' Añadir ',
+                  ),
+                ],
+              ),
             ),
           ),
         ),

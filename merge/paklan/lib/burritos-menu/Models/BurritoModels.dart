@@ -1,29 +1,22 @@
 import 'dart:math';
 
-
-double _doubleInRange(Random source, num start, num end) => source.nextDouble() * (end - start) + start;
+double _doubleInRange(Random source, num start, num end) =>
+    source.nextDouble() * (end - start) + start;
 final random = Random();
 
-final burritos = List.generate(_names.length, (index) 
-  => BurritoModels(
-    name: _names[index],
-    image: 'Assets/Burros/${index + 1}.png',
-    price: _doubleInRange(random, 3, 7)
-  )
-);
+final burritos = List.generate(
+    _names.length,
+    (index) => BurritoModels(
+        name: _names[index],
+        image: 'Assets/Burros/${index + 1}.png',
+        price: _doubleInRange(random, 3, 7)));
 
-class BurritoModels
-{
+class BurritoModels {
   final String name;
   final String image;
   final double price;
 
-  BurritoModels({
-    required this.name, 
-    required this.image, 
-    required this.price
-  });
-
+  BurritoModels({required this.name, required this.image, required this.price});
 }
 
 final _names = [
