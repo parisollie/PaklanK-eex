@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "140788806937",
+    "project_id": "mousy-cce5a",
+    "storage_bucket": "mousy-cce5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140788806937:android:1a5582c2f0d404db43c188",
+        "android_client_info": {
+          "package_name": "com.example.mousy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140788806937-hft0jdvcs8h2q2472dc98t9j0ce6r53g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAXdegAF4XaQVN71rh6bfAUt9Iy2mwVwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140788806937-hft0jdvcs8h2q2472dc98t9j0ce6r53g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140788806937:android:249a845e2fc2451543c188",
+        "android_client_info": {
+          "package_name": "com.example.paklan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140788806937-hft0jdvcs8h2q2472dc98t9j0ce6r53g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAXdegAF4XaQVN71rh6bfAUt9Iy2mwVwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140788806937-hft0jdvcs8h2q2472dc98t9j0ce6r53g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
