@@ -3,15 +3,26 @@
 
 * Author:  Paul Jaime Félix Flores
 
-* Date:    07/02/2022
+* Start Date:07/02/2022
+* ** *****************************************************************************************************************************************
 
-* I am currently developing a prototype that will contain 3 things, a database to sell products, a web application and a web page to promote the application for the UNAM engineering faculty.
-* The app can do the following things at the moment
-* 
-* It has an interactive menu to order
-* Can recognize QR codes
-* It has an interactive menu to see the electronic cards
-* It has terms and conditions
+I am currently developing a prototype that will contain 4 things:
+
+   *An application prototype for engineering faculty students.
+   
+   *A database to sell products.
+   
+   *A Web application and a web page to promote the application for the UNAM engineering faculty.
+   
+   *A TIC project management project, related to this.
+
+The app can do the following things at the moment:
+
+  * It has an interactive menu to order.
+  * Can recognize QR codes.
+  * It has an interactive menu to see the electronic cards.
+  * It has terms and conditions.
+
 
 * ** *****************************************************************************************************************************************
 
