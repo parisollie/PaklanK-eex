@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:paklan/models/productos_model.dart';
-import 'package:paklan/pages/pedList.dart';
+import 'package:paklan/inicioApp/models/productos_model.dart';
+import 'package:paklan/inicioApp/pages/pedList.dart';
 import 'package:paklan/inicioApp/drawer/NabBar.dart';
 
 class MyApp extends StatelessWidget {

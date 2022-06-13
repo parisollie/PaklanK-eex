@@ -5,7 +5,7 @@ import 'package:paklan/aplicaciones/condiciones/pages/conditions.dart';
 import 'package:paklan/aplicaciones/creditCard/tar.dart';
 import 'package:paklan/login/screens/Welcome/components/body.dart';
 import 'package:paklan/aplicaciones/MenuTarjetas/menuTar.dart';
-import 'package:paklan/principal/home.dart';
+import 'package:paklan/aplicaciones/comida/principal/home.dart';
 
 /**/
 class NavBar extends StatelessWidget {

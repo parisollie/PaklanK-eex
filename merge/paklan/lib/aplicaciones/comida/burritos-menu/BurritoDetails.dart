@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paklan/novedades/Models/BurritoModels.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/Models/BurritoModels.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BurritosDetailPage extends StatelessWidget {

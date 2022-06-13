@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   # CAMARAIMAGEN
-  #image_picker: ^0.8.5
+  
   image_cropper: ^2.0.3
   dio: ^4.0.6
   #TARJETA
@@ -58,7 +58,7 @@ dependencies:
   flutter_qr_bar_scanner: ^3.0.2
   # para login
   firebase_core: ^1.11.0
-  #firebase_auth: ^0.18.2
+  
   firebase_auth: ^3.3.5
   flutter_svg: ^1.1.0
   flutter_rating_bar: ^4.0.0
@@ -96,12 +96,7 @@ flutter:
    - Assets/letras/
    - Assets/docs/
    - Assets/Burros/
-   - assets/plate1.png
-   - assets/plate2.png
-   - assets/plate3.png
-   - assets/plate4.png
-   - assets/plate5.png
-   - assets/plate6.png
+   
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

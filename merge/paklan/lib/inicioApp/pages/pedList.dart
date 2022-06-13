@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:paklan/models/productos_model.dart';
+import 'package:paklan/inicioApp/models/productos_model.dart';
 import 'package:paklan/pagado/pagado.dart';
 
 

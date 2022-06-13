@@ -1,13 +1,13 @@
 //Inicio de la app de burritos
 import 'package:flutter/material.dart';
-import 'package:paklan/principal/georgeus/header2.dart';
-import 'package:paklan/principal/georgeus/categories.dart';
-import 'package:paklan/principal/georgeus/burrito_list.dart';
-import 'package:paklan/principal/georgeus/burrito_page.dart';
+import 'package:paklan/aplicaciones/comida/principal/georgeus/header2.dart';
+import 'package:paklan/aplicaciones/comida/principal/georgeus/categories.dart';
+import 'package:paklan/aplicaciones/comida/principal/georgeus/burrito_list.dart';
+import 'package:paklan/aplicaciones/comida/principal/georgeus/burrito_page.dart';
 
 import 'package:paklan/inicioApp/homeApp.dart';
-import 'package:paklan/carrito/list_page.dart';
-import 'package:paklan/burritos-menu/brlp.dart';
+import 'package:paklan/aplicaciones/comida/carrito/list_page.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/brlp.dart';
 
 class Inicio extends StatefulWidget {
   @override

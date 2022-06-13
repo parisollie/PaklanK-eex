@@ -1,7 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:paklan/carrito/datos.dart';
+import 'package:paklan/aplicaciones/comida/carrito/datos.dart';
 import 'package:paklan/pagado/pagado.dart';
 
 class cart_page extends StatelessWidget {

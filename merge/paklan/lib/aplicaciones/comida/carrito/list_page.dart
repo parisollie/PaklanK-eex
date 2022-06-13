@@ -3,9 +3,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:paklan/carrito/cart_page.dart';
-import 'package:paklan/carrito/datos.dart';
-import 'package:paklan/carrito/detail_page.dart';
+import 'package:paklan/aplicaciones/comida/carrito/cart_page.dart';
+import 'package:paklan/aplicaciones/comida/carrito/datos.dart';
+import 'package:paklan/aplicaciones/comida/carrito/detail_page.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class list_page extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paklan/burritos-menu/BurritoDetails.dart';
-import 'package:paklan/burritos-menu/Models/BurritoModels.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/BurritoDetails.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/Models/BurritoModels.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 

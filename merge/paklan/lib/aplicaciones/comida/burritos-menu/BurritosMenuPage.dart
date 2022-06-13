@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paklan/burritos-menu/brlp.dart';
-import 'package:paklan/burritos-menu/Models/BurritoModels.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/brlp.dart';
+import 'package:paklan/aplicaciones/comida/burritos-menu/Models/BurritoModels.dart';
 
 class BurritosMenuPage extends StatefulWidget {
   @override

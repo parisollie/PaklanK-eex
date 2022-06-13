@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:paklan/letras/detailsPage.dart';
+import 'package:paklan/aplicaciones/condiciones/pages/detailsPage.dart';
 import 'package:paklan/inicioApp/homeApp.dart';
 
 class Conditions extends StatefulWidget {
