@@ -53,6 +53,7 @@ class _menTarState extends State<menTar> {
 
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
         
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Color(0xff3FACB3)),
@@ -64,6 +65,8 @@ class _menTarState extends State<menTar> {
         ),
         centerTitle: true,
         
+=======
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

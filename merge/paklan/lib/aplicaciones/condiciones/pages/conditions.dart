@@ -24,10 +24,14 @@ class _ConditionsState extends State<Conditions> {
                 IconButton(
                   icon: Icon(Icons.arrow_back),
                   color: Colors.white,
+<<<<<<< HEAD
                   onPressed: () {
                     //Le ponemos pop para regresar
                     Navigator.pop(context);
                   },
+=======
+                  onPressed: () {},
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
                 ),
                 Container(
                     width: 125.0,

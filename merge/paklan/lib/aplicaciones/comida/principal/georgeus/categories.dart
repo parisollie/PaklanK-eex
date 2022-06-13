@@ -1,6 +1,10 @@
 //Esto es para las cajitas de arriba
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
 class Categories extends StatefulWidget {
   @override
   _CategoriesState createState() => _CategoriesState();

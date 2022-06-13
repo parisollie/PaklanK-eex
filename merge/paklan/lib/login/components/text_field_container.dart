@@ -4,7 +4,11 @@ import 'package:paklan/constants.dart';
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
   const TextFieldContainer({
+<<<<<<< HEAD
     Key? key = null,
+=======
+    Key? key=null,
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
     required this.child,
   }) : super(key: key);
 

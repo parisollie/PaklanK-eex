@@ -14,6 +14,7 @@ class BurritosDetailPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () => Navigator.of(context).pop(),
@@ -23,6 +24,8 @@ class BurritosDetailPage extends StatelessWidget {
           style: TextStyle(color: Colors.red),
         ),
         centerTitle: true,
+=======
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

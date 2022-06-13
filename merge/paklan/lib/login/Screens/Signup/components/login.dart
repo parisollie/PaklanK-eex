@@ -139,7 +139,11 @@ class _LogBodState extends State<LogBod> {
                   children: <Widget>[
                     TextButton(
                       child: Text(
+<<<<<<< HEAD
                         '¿Ya tienes una cuenta?, Sign in',
+=======
+                        'Ya tienes una cuenta?, Sign in',
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
                         style: TextStyle(
                           color: Colors.teal,
                           fontWeight: FontWeight.bold,

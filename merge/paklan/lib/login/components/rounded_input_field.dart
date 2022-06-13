@@ -7,7 +7,11 @@ class RoundedInputField extends StatelessWidget {
   final IconData icon;
   final ValueChanged<String> onChanged;
   const RoundedInputField({
+<<<<<<< HEAD
     Key? key = null,
+=======
+    Key? key=null,
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
     required this.hintText,
     this.icon = Icons.person,
     required this.onChanged,

@@ -5,7 +5,11 @@ import 'package:paklan/constants.dart';
 class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
   const RoundedPasswordField({
+<<<<<<< HEAD
     Key? key = null,
+=======
+    Key? key=null,
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
     required this.onChanged,
   }) : super(key: key);
 

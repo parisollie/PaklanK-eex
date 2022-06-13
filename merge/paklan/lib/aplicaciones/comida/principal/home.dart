@@ -106,12 +106,17 @@ class _ComidaState extends State<Comida> {
                   //Color de los icons
                   color: Colors.white,
                   onPressed: () {
+<<<<<<< HEAD
                     //print("Presionaste el botton")
                     //Para irnos a la otra pagina
                     Navigator.push(
                         //Navigator nos pide el contexto
                         context,
                         //Y nos pide el widget a utilizar
+=======
+                    //auth.signOut();
+                    Navigator.of(context).pushReplacement(
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
                         MaterialPageRoute(builder: (context) => list_page()));
                   },
                 ),
@@ -124,12 +129,17 @@ class _ComidaState extends State<Comida> {
                   //Color de los icons
                   color: Colors.white,
                   onPressed: () {
+<<<<<<< HEAD
                     //print("Presionaste el botton")
                     //Para irnos a la otra pagina
                     Navigator.push(
                         //Navigator nos pide el contexto
                         context,
                         //Y nos pide el widget a utilizar
+=======
+                    //auth.signOut();
+                    Navigator.of(context).pushReplacement(
+>>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
                         MaterialPageRoute(builder: (context) => BLP()));
                   },
                 ),
