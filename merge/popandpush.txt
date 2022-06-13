@@ -1,0 +1,17 @@
+onPressed: () =>{
+                  //print("Presionaste el botton")
+                  //Para irnos a la otra pagina
+                  Navigator.push(
+                    //Navigator nos pide el contexto
+                    context,
+                    //Y nos pide el widget a utilizar
+                    MaterialPageRoute(builder: (context)=>Pagina02())
+                    )
+                },
+
+--------------------------------------------------------------------
+
+ onPressed: ()=>{
+                    //Le ponemos pop para regresar
+                    Navigator.pop(context)
+                  },
