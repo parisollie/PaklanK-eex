@@ -1,0 +1,5 @@
+sirve para actualizar los paquetes de flutter
+flutter pub upgrade --major-versions
+}
+fluuter clean
+flutter pub get
