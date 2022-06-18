@@ -29,7 +29,7 @@ The app can do the following things at the moment:
 
 
 This repository contains all the work done  for my social service what I do for the faculty of engineering UNAM.
-The supervisor of my social service is M.I Norma Elva Chavéz Rodríguez.
+
 
 
 
