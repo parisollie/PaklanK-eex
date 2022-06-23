@@ -102,7 +102,6 @@ public class VentasForm extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -140,13 +139,10 @@ public class VentasForm extends javax.swing.JInternalFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/zorro.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("www.elzorro.com");
+        jLabel2.setText("www.paklan.com");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("El Zorro");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setText("Papeleria");
+        jLabel3.setText("Paklan k'eex");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -160,10 +156,8 @@ public class VentasForm extends javax.swing.JInternalFrame {
                         .addGap(198, 198, 198)
                         .addComponent(jLabel2))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(226, 226, 226)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))))
+                        .addGap(216, 216, 216)
+                        .addComponent(jLabel3)))
                 .addContainerGap(268, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -173,8 +167,6 @@ public class VentasForm extends javax.swing.JInternalFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addGap(41, 41, 41))
@@ -436,7 +428,7 @@ public class VentasForm extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -566,7 +558,7 @@ public class VentasForm extends javax.swing.JInternalFrame {
         try {
              //Adaptar para la máquina en que se use
             String ruta = "C:\\Users\\hasti\\Desktop\\ESCOMCU\\Todo\\ProyectoBasesMejorado";
-            String rutaImagen = "C:\\Users\\hasti\\Desktop\\ESCOMCU\\Todo\\ProyectoBasesMejorado\\ProyectoMejorado\\src\\Img\\EncabezadoFactura.jpg";
+            String rutaImagen = "C:\\Users\\hasti\\Desktop\\ESCOMCU\\Todo\\ProyectoMejorado\\src\\Img\\EncabezadoFactura2.jpg";
             con = cn.Conectar();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
@@ -718,7 +710,6 @@ public class VentasForm extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

@@ -7,18 +7,22 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
+import modelo.ImagenFondo;
 
 public class Principal extends javax.swing.JFrame {
 
     public Principal() {
         initComponents();
+        VentanaPrincipal.setBorder(new ImagenFondo());
+        this.setExtendedState(MAXIMIZED_BOTH);
+        /*
         this.setExtendedState(MAXIMIZED_BOTH); //Para la patalla completa
         ((JPanel)getContentPane()).setOpaque(false);
         ImageIcon uno=new ImageIcon(this.getClass().getResource("/Img/morado.jpg"));
         JLabel fondo= new JLabel();
         fondo.setIcon(uno);
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
-        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
+        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());*/
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
