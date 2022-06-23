@@ -32,7 +32,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuGenerarVenta">
               <Properties>
-                <Property name="text" type="java.lang.String" value="GenerarVenta"/>
+                <Property name="text" type="java.lang.String" value="Generar venta"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuGenerarVentaActionPerformed"/>
@@ -40,7 +40,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Registrar Pago"/>
+                <Property name="text" type="java.lang.String" value="Registrar pago"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem7ActionPerformed"/>
@@ -90,7 +90,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Categoria"/>
+                <Property name="text" type="java.lang.String" value="Categor&#xed;a"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem9ActionPerformed"/>

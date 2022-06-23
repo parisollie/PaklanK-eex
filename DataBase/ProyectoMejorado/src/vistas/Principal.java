@@ -75,7 +75,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/logoventas.png"))); // NOI18N
         jMenu2.setText("Ventas");
 
-        menuGenerarVenta.setText("GenerarVenta");
+        menuGenerarVenta.setText("Generar venta");
         menuGenerarVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuGenerarVentaActionPerformed(evt);
@@ -83,7 +83,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu2.add(menuGenerarVenta);
 
-        jMenuItem7.setText("Registrar Pago");
+        jMenuItem7.setText("Registrar pago");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem7ActionPerformed(evt);
@@ -128,7 +128,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem5);
 
-        jMenuItem9.setText("Categoria");
+        jMenuItem9.setText("Categoría");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem9ActionPerformed(evt);

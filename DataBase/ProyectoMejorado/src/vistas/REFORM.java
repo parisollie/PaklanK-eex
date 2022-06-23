@@ -84,7 +84,7 @@ public class REFORM extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("REGISTRAR PAGO");
+        setTitle("Registrar pago");
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());

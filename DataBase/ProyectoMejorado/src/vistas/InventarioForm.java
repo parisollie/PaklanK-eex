@@ -111,7 +111,7 @@ public class InventarioForm extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("INVENTARIO");
+        setTitle("Inventario");
 
         jPanel6.setBackground(new java.awt.Color(255, 204, 204));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());

@@ -131,7 +131,7 @@ public class VentasForm extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("VENTAS");
+        setTitle("Ventas");
 
         jPanel6.setBackground(new java.awt.Color(255, 153, 153));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -428,7 +428,7 @@ public class VentasForm extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

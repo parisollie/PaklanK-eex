@@ -59,7 +59,7 @@ public class VendedorForm extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
-        setTitle("Modulo Vendedor");
+        setTitle("Vendedor");
 
         jPanel2.setBackground(new java.awt.Color(255, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
