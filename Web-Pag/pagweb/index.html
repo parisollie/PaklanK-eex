@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Meta para hacerlo repsonsive y se adapte a cualquier tipo de pantalla.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia-Valentina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Vinculamos al css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor=  #89f0fa >
+    <!---header.header>.contenedor>h1.logo+span.icon-menu+nav.nav -->
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">Āhuilli.</h1>
+            <!--Ponemos el btn-menu para llamarlo del js-->
+            <span class="icon-menu" id="btn-men"></span>
+           
+            <!--ul.menu>li.menu__link*4>a-->
+            <!--Ponemos el nav para llamarlo del js-->
+            <nav class="nav" id="navs">
+                <ul class="menu">
+                    <!--Select es para que siempre este seleccionado un elemento.-->
+                    <li class="menu__item"><a class="menu__link select" href="">Inicio.</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Book.</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">About us.</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Organization.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--.banner>img.banner__img+.contenedor>h2.banner___titulo+p.banner__txt-->
+     
+    <div class="banner">
+        <img src="img/tur4.jpg" alt="" class="banner__img">
+        <div class="contenedor">
+            <h2 class="banner__titulo">¿What's the point of your life ?</h2>
+           
+            <p class="p banner__txt">Proudly Mexican company in exporting smiles to the world.</p>
+        </div>
+    </div>
+    
+    <main class="main">
+
+        <div class="contenedor">
+            <!--
+            section.info>article.info__columna*3>img.info__img[src="img/elmis.jpg"]+h2.info__titulo{
+                Titulo $}+p.info__txt>lorem15-->
+            <!--El dolar es para que se vaya enumerando , el exto lorem es para que nos salga escrito-->
+            <section class="info">
+                <article class="info__columna">
+                    <img src="img/blue5.jpg" alt="" class="info__img">
+                    <h2 class="info__titulo">Director general.</h2>
+                    <p class="info__txt">Hello, I am Paul Jaime Felix Flores from Mexico, I am the director 
+                        of this company, this job has left me many lessons throughout the life of the company, 
+                        it reminds me that it is never too late to play with toys again.</p>
+                </article>
+
+                <article class="info__columna">
+                    <img src="img/liz.jpg" alt="" class="info__img">
+                    <h2 class="info__titulo">Directora de proyecto.</h2>
+                    <p class="info__txt">Hello, my name is Lizeth Guzman Martinez, I accepted this job because I would like to unite Mexican families and see happy children, 
+                        in addition to helping Mexican toymakers.</p>
+                </article>
+
+                <article class="info__columna">
+                    <img src="img/SALVA.jpeg" alt="" class="info__img">
+                    <h2 class="info__titulo">Director de Ventas.</h2>
+                    <p class="info__txt">Hello, I'm Salvador Amezaga a from Mexico and I'm the Sales manager of the 
+                        company, my job is to sell the most toys that the company can sell and make happy a lot of childrens, I like all the toys that whe sell.</p>
+                </article>
+            </section>
+            
+            <!-- section.cursos>h2.section__titulo+.cursos__columna*4>img.cursos__img[src="img/andsod.jpg"]+.cursos__descripcion>h3.cursos__titulo+p.cursos__txt>lorem10 -->
+            
+            <section class="cursos">
+                <h2 class="section__titulo">TARGET'S.</h2>
+                <div class="cursos__columna">
+                    <img src="img/t1.jpg" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">Children's.</h3>
+                        <p class="cursos__txt">"We have toys for the little ones adjusting to their safety"
+                        </p>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/t2.jpg" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">Collectors.</h3>
+                        <p class="cursos__txt">"
+                            We can get what you are looking for to have that collection that you need to complete."
+                        </p>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/t3.jpg" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">Mexican toys.</h3>
+                        <p class="cursos__txt">"We have the beautiful Mexican toys that will make your house have a warm view."</p>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/toy4.jpg" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">Genders.</h3>
+                        <p class="cursos__txt">"We have the toys for each gender that you want"</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--  .social>.icon-*4^p.copy  -->
+    <footer class = "footer">
+        <div class="social">
+            
+            <a href="https://www.instagram.com/pjollie1718/"><span class="icon icon-instagram"></span></a>
+            <a><span class="icon icon-facebook"></span></a>
+            <a><span class="icon icon-telegram"></span></a>
+            <a href="https://twitter.com/ParisOllie1"><span class="icon icon-twitter"></span></a>
+            
+        </div>
+        <p class="copy">&copy;Āhuilli 2021 -Todos los derechos reservados.</p>
+
+    </footer >
+    <!--Para que llamemos al js-->
+    <script src="js/menu.js"></script>  
+
+    <audio autoplay loop>
+        <source src="skins.mp3" type ="audio/mpeg">
+      </audio>
+</body>
+</html>

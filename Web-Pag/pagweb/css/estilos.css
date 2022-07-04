@@ -1,0 +1,499 @@
+/*Importamos las fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+/*Para que encierre en la caja a inicio,cursos, etc*/
+*{
+    box-sizing: border-box;
+}
+/*Para las etiquetas*/
+img{
+    display: block;
+    max-width: 100%;    
+}
+
+body{
+    margin: 0; 
+    font-family: 'Open Sans', 'Balsamiq Sans';   
+}
+/*Para todos los titulos*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Caveat', cursive;
+    /*Espacio en cada letra.*/
+    letter-spacing: 1.5px;
+    color:   #192ddce0;/*tema principal*/
+    font-size: 35px;
+}
+
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    /*Musica favorita*/
+    color:  #6b6dd1 ; /*titulos*/
+    margin-bottom:15px;
+}
+
+.contenedor{
+    margin: auto;
+    /*El espacio a los lados*/
+    width: 99%;
+}
+
+/*-----------------------------------------------Estilos del header*/
+/*Lo que se trabaja aqui es para la vista celular*/
+/*El header es pudding*/
+.header{
+    height: 60px;
+}
+
+.header.contenedor{
+    /*Para que se coloque uno a lado del otro*/
+    display: flex;
+    /*Es para que se separen Pudding y el menu y queden en las esquinas.*/
+    justify-content: space-between;
+}
+/*Es para que pPudding y el icon de menu queden iguales*/
+.logo,.icon-menu{
+    margin: -5px;
+    color:  #433685/*Color empresa*/
+}
+/*Dibujamos el cuadrito del menú*/
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 35px;
+    font-size: 30px;
+    background: #6b6dd1 ;
+    color:#fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    /*Para que conserve su espacio en mozila*/
+    margin-left: auto;
+    /*Para que aparezca el cursor de la mano en el menu*/
+    cursor: pointer;
+}
+/*-------------------------------Estilos del menu */
+
+/*Para que desaparezca, inicio,docentes*/
+.nav{
+    position: absolute;
+    /*Para mover inicio,cursos,docentes,etc*/
+    top: 80px;
+    /*-100% para que se vaya la izquierda*/
+    left: -100%;
+    width: 100%;
+    /*Le ponemos la transicion para que desaparezca*/
+    transition: all 0.1s;
+}
+
+.menu{
+    /*Le quitamos las bolitas*/
+    list-style: none;
+    padding: 0;
+    /*Le quitamos las lineas que subrayan.*/
+    margin: 0;
+}
+/*Son las etiquetas a*/
+.menu__link{
+    /*Las etiqueta a no son un elemento de bloque,son uno de línea,por eso hacemos eso*/
+    display: block;
+    /*El padding es la separacion entre inicio y cursos*/
+    padding: 10px;
+    background: #6b6dd1 ;
+    text-decoration: none;
+    color:#fff;
+    
+}
+/*Evento para pasar el mouse*/
+/*Select para que este seleccionado el Inicio*/
+.menu__link:hover,.select{
+    background: white;/*color para seleccionar inicio,cursos*/
+    color:#6b6dd1 ;
+}
+/*Le decimos que regresa a su posicion original*/
+.mostrar{
+    left: 0;
+}
+/*-------------------------------Estilos del banner-----------*/
+/*El baner es dónde esta el subtitulo*/
+.banner{
+    /*para que la imagen toque el top de la pantalla*/
+    margin-top: -70px;
+    /*Aplicamos esto para que la imagen quede detrás del menu y el titulo.*/
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+/*Ponemos el titulo en la iamgen turquesa*/
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color:  #ffffff ;/*Subtitulos*/
+    text-align: center;
+}
+.banner__txt{
+    /*El subtiulo no se ve en el banner en este ejemplo ,asi que lo quita*/
+    display: none;
+}
+
+/*----------------------------------------Estilos de info*/
+
+.info__columna{
+     
+    background: #ac9ef0;
+    color: #fff;
+    padding: 3px;
+    /*Para que no los separe las imagenes una de otra*/
+     margin-bottom: 20px;
+}
+
+/*-------Estilos de cursos*/
+
+.cursos_columna{
+    position: absolute;
+   /* position: relative; */
+    margin-bottom: 30px;
+}
+.cursos__descripcion{
+    /*position: absolute;
+    top: 0px;
+    left : 0px;*/
+   position:relative;
+    top: -30px;
+    left : 0px;
+    color:#fff;
+    /*La sombra del recuadro*/
+    background: rgba(63, 63, 63, 0.5);
+    /*El ancho de la sombra*/
+    width: 60%;
+    /*Para el alto del cuadro gris*/
+    height: -80%;
+    /*Para separar la musica.*/
+    margin-bottom: -60px;
+}
+
+.cursos__titulo{
+    /*Aumentar el nombre de los artistas*/
+    font-size: 35px;
+    /*Margin de 5 y 0 a los costados*/
+    margin:5px 0;
+}
+/*Para que las imagenes queden unas con otras en la misma medida*/
+.cursos__img{
+    width: 100%;
+}
+
+/*--------------------Estilos de footer*/
+
+.footer{
+    background: rgb(22, 166, 233);
+    color:#fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    /*Separacion del footer con la ultima imagen*/
+    margin-top: -100px;
+    text-align: center;
+}
+/*Para los iconos*/
+.footer .social span{
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(153, 150, 242);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+   
+}
+/*---------------------------Estilo responsive*/
+
+@media(min-width:480px){ 
+    .logo{
+        font-size: 40px;
+    }
+
+    .baner__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    .info,.cursos{
+        display: flex;
+        justify-content: space-between;
+        /*Para que quede abajo del fondo*/
+        margin-top: -40px ;
+    }
+
+    .info__columna{
+        /*Separacion entre las columnas.*/
+        width: 32%;
+        
+    }
+    
+    .info__titulo{
+        font-size: 30px;
+        margin:5px 0;
+    }
+    
+    .section__titulo{
+        width: 100%;
+    }
+    
+    .cursos{
+        /*Para que el contenido que ya no entre se vaya hacia abajo*/
+        flex-wrap: wrap;
+        /*Para musica*/
+        margin-top: 10;
+        
+    }
+    
+    .cursos__columna{
+        /*Para que tengamos dos columnas*/
+        width: 48%;
+       
+    }
+    /*
+    .footer .social[class^="icon-"]{
+        margin:0 10px;
+        margin-top: 100px;
+    }*/
+
+
+    .footer{
+        background: rgb(22, 166, 233);
+        color:#fff;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        /*Separacion del footer con la ultima imagen*/
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .cursos__descripcion{
+           
+        position:relative;
+        top: -228px;
+        left : 0px;
+        height: 79%;
+        font-size: 13px;
+        margin-bottom: -170px;
+        
+    }
+    .cursos_columna{
+        position: absolute; 
+    }
+    
+
+     /*Tamaño tablet*/
+    @media(min-width: 768px){
+        .banner__titulo{
+            font-size: 60px;
+        }
+        /*Letras artistas*/
+        .cursos__titulo{
+            font-size: 40px;
+        }
+
+        .cursos_columna{
+            position: absolute; 
+            margin-bottom: 20px;
+            
+        }
+
+        .cursos__descripcion{
+            position:relative;
+            top: -257px;
+            left : 0px;
+            height: 54%;
+            margin-top: 20px ;
+            font-size: 17px;
+        }
+        /*para el tamaño de in this light*/
+        .banner__txt{
+            font-size: 30px;
+        }
+
+        .section__titulo{
+            text-align: center;
+            font-size: 60px;
+            /*Musica favorita*/
+            color:  #6b6dd1 ; /*titulos*/
+            margin-bottom:15px;
+        }
+        /*Para el menu*/
+        .menu__link{
+            /*Las etiqueta a no son un elemento de bloque,son uno de línea,por eso hacemos eso*/
+            display: block;
+            /*El padding es la separacion entre inicio y cursos*/
+            padding: 20px;
+            background: #6b6dd1 ;
+            text-decoration: none;
+            color:#fff;
+            font-size: 20px
+        }
+    }
+    /*Tamaño escritorio*/
+    @media(min-width: 1024px){
+        .contenedor{
+            width: 800px;
+        }
+        .section__titulo{
+            font-size: 50px;
+            margin:30px 0;
+        }
+        .nav{
+            position: static;
+            width:auto;
+        }
+        .menu{
+            display: flex;
+        }
+        .icon-menu{
+            display: none;
+        }
+        .menu__link{
+            background: none;
+            font-size: 20px;
+        }
+        .select{
+            color:#fff;
+            background: #6b6dd1 ;
+        }
+        .banner__titulo{
+            font-size: 50px;
+        }
+        .banner__txt{
+            font-size: 25px;
+        }
+        .info{
+            margin-top: -110px;
+        }
+        .info__columna{
+            padding: 30px;
+            
+        }
+        .info__titulo{
+            font-size: 40px;
+            text-align: center;
+            
+        }
+
+        
+        .cursos__descripcion{
+            padding: 20px;
+
+            position:relative;
+            top: -215px;
+            left : 0px;
+            height: 60%;
+            width: 60%;
+            margin-top: -80px ;/*para mover los london*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    
+
+        .cursos__titulo{
+            font-size: 30px;
+           
+        }
+        .cursos__txt{
+            font-size: 20px;
+        }
+
+        .section__titulo{
+            text-align: center;
+            font-size: 80px;
+            /*Musica favorita*/
+            color:  #6b6dd1 ; /*titulos*/
+            margin-bottom:15px;
+        }
+        /*para el tamaño de in this light*/
+        .banner__txt{
+            font-size: 40px;
+        }
+        /*Aumentar el tamaño del titulo*/
+        .banner__titulo{
+            font-size: 70px;
+        }
+    }
+    
+    @media (min-width:1280px) {
+        .contenedor{
+            width: 1200px;
+        }
+        .logo{
+            font-size: 60px;
+        }
+        .banner.contenedor{
+            top:40%;
+        }
+        /*Para que las tres columnas queden mas arriba del fondo turquesa*/
+        .info{
+            margin-top:-150px;
+        }  
+        .cursos__descripcion{
+            padding: 20px;
+
+            position:relative;
+            top: -300px;
+            left : 0px;
+            height: 50%;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /*Para separar las imagenes de los artistas*/
+            margin-bottom: -45px;
+        
+        }
+        .footer{
+            background: rgb(22, 166, 233);
+            color:#fff;
+            text-align: center;
+            font-size: 20px;
+            /*El grosor de del footer*/
+            padding: 10px;
+            /*Separacion del footer con la ultima imagen*/
+            margin-top: 0px;
+            text-align: center;
+            /*Para que quede pegadp a las imagenes*/
+            margin-top: -20px ;
+
+        }  
+        /*para el tamaño de in this light*/
+        .banner__txt{
+            font-size: 40px;
+        }
+        /*Aumentar el tamaño del titulo*/
+        .banner__titulo{
+            font-size: 70px;
+        }
+        .section__titulo{
+            text-align: center;
+            font-size: 80px;
+            /*Musica favorita*/
+            color:  #6b6dd1 ; /*titulos*/
+            margin-bottom:15px;
+        }
+    }
+}

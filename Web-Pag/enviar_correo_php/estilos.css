@@ -1,0 +1,73 @@
+body{
+    background-image: url(toys.jpg);
+    /*Abreviaciones para que nos quede a 100% de alto y ancho*/
+    background-size: 100vw 100vh;
+    /*Para que la imagen del fondo no se mueva.*/
+    background-attachment: fixed;
+    /*Para quitarle los espacios del body*/
+    margin: 0;
+    font-family: monospace;
+}
+
+form{
+    width: 450px;
+    /*Para que este centrado horizontalmente*/
+    margin:auto;
+    /*La transparencia.*/
+    background:rgba(0, 0, 0, 0.2);
+    /*Relleno del forulario*/
+    padding: 10px 20px;
+    /*Para que el relleno del formulario se vaya hacia dentro*/
+    box-sizing: border-box;
+    margin-top: 30px;
+    /*Redondeo del formulario*/
+    border-radius: 7px;
+}
+h2 {
+    /*Para Contacto*/
+    color:#fff;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*Dónde metemos los datos*/
+input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+}
+/*Dónde se escribe el mensaje*/
+textarea{
+    min-width: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color:#fff;
+    padding:20px;
+}
+/*Hover que estilos tendrá cuándo esta sobre el boton.*/
+#boton:hover{
+    cursor:pointer;
+}
+/*Para el estilo responsive*/
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    background: rgba(0, 0,0, 0.3);
+    margin-top: 20px;
+}
+
