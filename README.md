@@ -4,6 +4,7 @@
 * Author:  Paul Jaime Félix Flores
 
 * Start Date:07/02/2022
+* End Date:07/08/2022
 * ** *****************************************************************************************************************************************
 
 I am currently developing a prototype that will contain 4 things:
