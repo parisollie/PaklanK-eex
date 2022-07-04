@@ -9,9 +9,9 @@
 
 I am currently developing a prototype that will contain 4 things:
 
-   *An application prototype for engineering faculty students.
+   *An application prototype for engineering faculty students(READY).
    
-   *A database to sell products.
+   *A database to sell products(READY).
    
    *A Web page to promote the application for the UNAM engineering faculty.
    
