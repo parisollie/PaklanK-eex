@@ -13,7 +13,7 @@ I am currently developing a prototype that will contain 4 things:
    
    *A database to sell products.
    
-   *A Web application and a web page to promote the application for the UNAM engineering faculty.
+   *A Web page to promote the application for the UNAM engineering faculty.
    
    *A TIC project management project, related to this.
 
