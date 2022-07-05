@@ -3,10 +3,6 @@ import 'package:paklan/aplicaciones/comida/burritos-menu/BurritoDetails.dart';
 import 'package:paklan/aplicaciones/comida/burritos-menu/Models/BurritoModels.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
 const duration = Duration(milliseconds: 300);
 const _initialPage = 1.0;
 
@@ -57,7 +53,6 @@ class _BLPState extends State<BLP> {
 
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
         // backgroundColor: Colors.white,
 
         leading: IconButton(
@@ -71,9 +66,6 @@ class _BLPState extends State<BLP> {
         centerTitle: true,
 
         backgroundColor: Color.fromARGB(0, 53, 40, 40),
-=======
-        backgroundColor: Colors.transparent,
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
         elevation: 0,
       ),
       body: Stack(

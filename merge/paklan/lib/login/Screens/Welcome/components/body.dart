@@ -5,11 +5,6 @@ import 'package:paklan/login/Screens/Login/login_screen.dart';
 import 'package:paklan/login/Screens/Signup/signup_screen.dart';
 import 'package:paklan/login/Screens/Welcome/components/background.dart';
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

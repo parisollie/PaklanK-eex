@@ -3,12 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:paklan/inicioApp/models/productos_model.dart';
 import 'package:paklan/pagado/pagado.dart';
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
 class Cart extends StatefulWidget {
   final List<ProductosModel> _cart;
 

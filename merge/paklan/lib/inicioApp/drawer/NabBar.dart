@@ -6,10 +6,7 @@ import 'package:paklan/aplicaciones/creditCard/tar.dart';
 import 'package:paklan/login/screens/Welcome/components/body.dart';
 import 'package:paklan/aplicaciones/MenuTarjetas/menuTar.dart';
 import 'package:paklan/aplicaciones/comida/principal/home.dart';
-<<<<<<< HEAD
 import 'package:paklan/login/src/app.dart';
-=======
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
 
 /**/
 class NavBar extends StatelessWidget {
@@ -90,7 +87,6 @@ class NavBar extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-<<<<<<< HEAD
               leading: Icon(
                 Icons.credit_card,
                 color: Color(0xff3FACB3),
@@ -106,19 +102,6 @@ class NavBar extends StatelessWidget {
                       context,
                       //Y nos pide el widget a utilizar
                       MaterialPageRoute(builder: (context) => Tarjeta()))),
-=======
-            leading: Icon(
-              Icons.credit_card,
-              color: Color(0xff3FACB3),
-            ),
-            title: Text(
-              'Tarjeta',
-            ),
-            onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-              builder: (BuildContext context) => Tarjeta(),
-            )),
-          ),
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
           ListTile(
             leading: Icon(
               Icons.description,
@@ -150,7 +133,6 @@ class NavBar extends StatelessWidget {
             title: Text(
               'Exit',
             ),
-<<<<<<< HEAD
             onTap: () => //print("Presionaste el botton")
                 //Para irnos a la otra pagina
                 Navigator.push(
@@ -158,11 +140,6 @@ class NavBar extends StatelessWidget {
                     context,
                     //Y nos pide el widget a utilizar
                     MaterialPageRoute(builder: (context) => App())),
-=======
-            onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-              builder: (BuildContext context) => Body(),
-            )),
->>>>>>> e792f62f36c702d5b5ba7a0c422117a98dbee183
           ),
           ListTile(
             leading: Icon(
