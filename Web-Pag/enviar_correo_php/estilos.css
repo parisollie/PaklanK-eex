@@ -1,5 +1,5 @@
 body{
-    background-image: url(toys.jpg);
+    background-image: url(fondo.jpg);
     /*Abreviaciones para que nos quede a 100% de alto y ancho*/
     background-size: 100vw 100vh;
     /*Para que la imagen del fondo no se mueva.*/

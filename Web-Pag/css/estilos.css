@@ -237,6 +237,7 @@ img {
 .product:hover .product__icon {
   color: #0abbc1;
 }
+/*
 .container__testimonials{
   text-align: center;
   background: #F7F7F7;
@@ -246,6 +247,38 @@ img {
 .testimonial__txt{
   color: #777;
 }
+*/
+.section__title{
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+}
+.container-testimonials{
+  margin: 60px auto;
+  max-width: 650px;
+}
+.testimonials__img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+.testimonials__txt{
+  text-align: center;
+  padding: 20px;
+}
+.testimonials__name{
+  text-align: center;
+  font-size: 1.4em;
+  color:#0abbc1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
 .container-editor{
   margin-top: 20px;
 }
