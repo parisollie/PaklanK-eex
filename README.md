@@ -9,13 +9,13 @@
 
 I am currently developing a prototype that will contain 4 things:
 
-   *An application prototype for engineering faculty students(READY).
+   *An application prototype for engineering faculty students(FINISHED).
    
-   *A database to sell products(READY).
+   *A database to sell products(FINISHED).
    
-   *A Web page to promote the application for the UNAM engineering faculty(READY).
+   *A Web page to promote the application for the UNAM engineering faculty(FINISHED).
    
-   *A TIC project management project, related to this.
+   *A TIC project management project, related to this(IN PROCESS).
 
 The app can do the following things at the moment:
 
