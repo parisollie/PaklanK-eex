@@ -1,0 +1,7 @@
+1.-Objetivo smart(listo)
+2.-Gestion de integracion(listo)
+3.-Gestion del alcance
+4.-Estimaciones
+5.-Gestion cronograma del tiempo
+(diagrama red)
+6.-Proceso gestion de riesgos
